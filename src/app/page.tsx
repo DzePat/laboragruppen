@@ -3,45 +3,23 @@ import Link from "next/link";
 
 export default function landingPage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 ">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="flex flex-col font-sans">
+      <main className="flex flex-col justify-center items-center">
         <Image
-          className="dark:invert"
+          className="bg-transparent"
           src="/logo.png"
           alt="Next.js logo"
           width={360}
           height= {48}
           priority
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-            <Link 
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            rel="noopener noreferrer"
-            href={"/about"}>About
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            </Link>
-            
-            <Link href={"/about"}>About Page</Link>
-        </div>
+        <p className="w-7xl font-bold text-2xl p-10">
+          Vi är passionerade,Kreativa och vi gillar det vi gör.
+         Labora Gruppens Kompenetsområden är många med erfaren och auktoriserad personal inom el, måleri och bygg. 
+         Vi genomför stora som små servicearbeten till att erbjuda helentrepenad.
+         Oavsett vad du behöver hjälp med eller vem du är som kund så ligger vårt focus på att utföra våra tjänster med hög kvalitet med nöjda och återkommande kunder.
+        Nedan kan du se vår bredd ionm olika verksamhetsområden. </p>
+        
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a

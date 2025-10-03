@@ -4,24 +4,30 @@ import Link from "next/link";
 import React from "react";
 import { usePathname } from "next/navigation";
 import { Url } from "next/dist/shared/lib/router/router";
+import Image from "next/image";
 
 interface INavbarProps {}
 
 const navItems = [
     {
-        id: "home",
-        label: "home",
-        href: "/",
-    },
-    {
         id: "about",
-        label: "About",
+        label: "OM OSS",
         href: "/about",
     },
     {
-        id: "forum",
-        label: "forum",
-        href: "/forum",
+        id: "search",
+        label: "HITTA PERSONAL",
+        href: "/search",
+    },
+    {
+        id: "jobs",
+        label: "SÖK JOBB",
+        href: "/jobs",
+    },
+    {
+        id: "contacts",
+        label: "KONTAKT",
+        href: "/contacts",
     },
 ];
 
@@ -30,20 +36,27 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
     const isActive = (path: Url) => pathname === path;
 
     return(
-        <nav className="pb-4 md:pb-8 flex justify-between items-center">
+        <nav className="pb-4 px-41 md:pb-8 flex justify-center items-center pd">
             <Link
                 href="/"
-                className="text-lg md:text-3x1 font-bold text-spotify-green"
+                className="p-3 absolute left-0"
             >
-                home
+                <Image
+                          className="bg-red-"
+                          src="/logo.png"
+                          alt="Next.js logo"
+                          width={41}
+                          height= {41}
+                          priority
+                        />
             </Link>
-            <ul className="flex justify-end items-center gap-4">
+            <ul className="p-3 flex justify-center items-center gap-4">
                 {navItems.map((eachItem) => (
                     <li key={eachItem.id}>
                         <Link 
                             href={eachItem.href}
                             className={
-                                `${isActive(eachItem.href) ? "text-green" : ""}`
+                                `${isActive(eachItem.href) ? "text-spotify-green" : ""} hover:underline hover:underline-offset-4 hover:text-blue-700`
                             }
                         >
                             {eachItem.label}
