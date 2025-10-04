@@ -6,7 +6,9 @@ import { usePathname } from "next/navigation";
 import { Url } from "next/dist/shared/lib/router/router";
 import Image from "next/image";
 
-interface INavbarProps {}
+interface INavbarProps {
+  title: string;
+}
 
 const navItems = [
     {
