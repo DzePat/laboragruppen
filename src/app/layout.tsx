@@ -7,7 +7,7 @@ import Navbar from "@/components/navbar";
 
 const inter = Inter({
   variable: "--font-inter",
-  subsets: ["latin"], // you can add "latin-ext" if needed
+  subsets: ["latin"], 
 });
 
 const interTight = Inter_Tight({
