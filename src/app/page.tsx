@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import LottieAnimation from '../components/LottieAnimation';
 
 export default function landingPage() {
   return (
@@ -7,18 +7,25 @@ export default function landingPage() {
       <main className="flex flex-col justify-center items-center">
         <Image
           className="bg-transparent"
-          src="/logo.png"
+          src="/newLogo.png"
           alt="Next.js logo"
           width={360}
           height= {48}
           priority
         />
-        <p className="w-7xl font-bold text-2xl p-10">
-          Vi är passionerade,Kreativa och vi gillar det vi gör.
-         Labora Gruppens Kompenetsområden är många med erfaren och auktoriserad personal inom el, måleri och bygg. 
-         Vi genomför stora som små servicearbeten till att erbjuda helentrepenad.
-         Oavsett vad du behöver hjälp med eller vem du är som kund så ligger vårt focus på att utföra våra tjänster med hög kvalitet med nöjda och återkommande kunder.
-        Nedan kan du se vår bredd ionm olika verksamhetsområden. </p>
+        <div className="flex items-center">
+          <p className="text-white w-2xl font-bold text-1xl p-1">
+            Vi är passionerade,Kreativa och vi gillar det vi gör.
+            Labora Gruppens Kompenetsområden är många med erfaren och auktoriserad personal inom el, måleri och bygg. 
+            Vi genomför stora som små servicearbeten till att erbjuda helentrepenad.
+            Oavsett vad du behöver hjälp med eller vem du är som kund så ligger vårt focus på att utföra våra tjänster med hög kvalitet med nöjda och återkommande kunder.
+            Nedan kan du se vår bredd ionm olika verksamhetsområden. 
+          </p>
+          <LottieAnimation
+            animationPath="/buildAnimation.json"
+            style={{ width: 400, height: 400, backgroundcolor: "black"}}
+          />
+        </div>
         
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">

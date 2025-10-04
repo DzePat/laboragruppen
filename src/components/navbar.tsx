@@ -36,17 +36,16 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
     const isActive = (path: Url) => pathname === path;
 
     return(
-        <nav className="pb-4 px-41 md:pb-8 flex justify-center items-center pd">
+        <nav className="pb-1 flex justify-center items-center">
             <Link
                 href="/"
-                className="p-3 absolute left-0"
+                className="absolute left-0"
             >
                 <Image
-                          className="bg-red-"
-                          src="/logo.png"
+                          src="/newLogo.png"
                           alt="Next.js logo"
-                          width={41}
-                          height= {41}
+                          width={60}
+                          height= {60}
                           priority
                         />
             </Link>
@@ -56,7 +55,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
                         <Link 
                             href={eachItem.href}
                             className={
-                                `${isActive(eachItem.href) ? "text-spotify-green" : ""} hover:underline hover:underline-offset-4 hover:text-blue-700`
+                                `${isActive(eachItem.href) ? "text-spotify-green" : ""} text-white hover:underline hover:underline-offset-4 hover:[color:#d6921c]`
                             }
                         >
                             {eachItem.label}
