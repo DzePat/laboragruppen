@@ -1,5 +1,6 @@
 import Image from "next/image";
 import LottieAnimation from '../components/LottieAnimation';
+import Bubble from "@/components/bubble";
 
 export default function landingPage() {
   return (
@@ -26,7 +27,12 @@ export default function landingPage() {
             style={{ width: 400, height: 400, backgroundcolor: "black"}}
           />
         </div>
-        
+        <div className="flex">
+          <Bubble title="EL" color="orange"></Bubble>
+          <Bubble title="Bygg" color="orange"></Bubble>
+          <Bubble title="Målning" color="orange"></Bubble>
+          <Bubble title="Service" color="orange"></Bubble>
+        </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
         <a
