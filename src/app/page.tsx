@@ -1,6 +1,7 @@
 import Image from "next/image";
 import LottieAnimation from '../components/LottieAnimation';
 import Bubble from "@/components/bubble";
+import { url } from "inspector";
 
 export default function landingPage() {
   return (
@@ -27,11 +28,23 @@ export default function landingPage() {
             style={{ width: 400, height: 400, backgroundcolor: "black"}}
           />
         </div>
-        <div className="flex flex-col">
-          <Bubble title="EL" color="orange" animation="/EL.png"></Bubble>
-          <Bubble title="Bygg" color="orange" animation=""></Bubble>
-          <Bubble title="Målning" color="orange" animation=""></Bubble>
-          <Bubble title="Service" color="orange" animation=""></Bubble>
+        <div className="flex flex-col w-full">
+          <div className="flex flex-row justify-center align-center bg-white p-3 my-5">
+            <div style={{display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", backgroundImage: 'url("/Electrician.jpg")', backgroundSize: 'cover', width: "auto", height: "auto" ,minHeight: "700px", minWidth: "700px"}}>
+              <Bubble title="EL" color="orange" animation="/EL.json"></Bubble>
+            </div>
+            <div style={{display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", backgroundImage: 'url("/construction.jpg")', backgroundSize: 'cover', width: "auto", height: "auto", minHeight: "700px", minWidth: "700px"}}>
+              <Bubble title="Bygg" color="orange" animation="Bygg.json"></Bubble>
+            </div>
+          </div>
+          <div className="flex flex-row justify-center align-center p-3 m-y-5">
+            <div style={{display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", backgroundImage: 'url("/malning.jpg")', backgroundSize: 'cover', width: "auto", height: "auto" ,minHeight: "700px", minWidth: "700px"}}>
+              <Bubble title="Målning" color="orange" animation="/paint.json"></Bubble>
+            </div>
+            <div style={{display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", backgroundImage: 'url("/service.jpg")', backgroundSize: 'cover', width: "auto", height: "auto" ,minHeight: "700px", minWidth: "700px"}}>
+              <Bubble title="Service" color="orange" animation="wrench.json"></Bubble>
+            </div>
+          </div>
         </div>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">

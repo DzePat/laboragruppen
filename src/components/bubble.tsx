@@ -9,15 +9,16 @@ interface props{
 
 function Bubble(props: props){
     return(
-        <div style={{display: "flex", width: "200px", height: "200px",backgroundColor: props.color,borderRadius: "50%"}}>
-            <label className="flex items-center justify-center text-white w-2xl font-bold text-2xl p-1">{props.title}</label>
+        <div style={{display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", width: "200px", height: "200px",backgroundColor: props.color,borderRadius: "50%"}}>
+            <label className="text-white font-bold text-2xl">{props.title}</label>
             {props.animation && (
                 <LottieAnimation
                 animationPath={props.animation}
                 style={{
+                left: 0,
                 backgroundcolor: "black",
-                width: 400,
-                height: 400,
+                width: 100,
+                height: 100,
           }}
         />)}
         </div>
