@@ -1,7 +1,6 @@
 import Image from "next/image";
 import LottieAnimation from '../components/LottieAnimation';
 import Bubble from "@/components/bubble";
-import { url } from "inspector";
 
 export default function landingPage() {
   return (
@@ -15,6 +14,14 @@ export default function landingPage() {
           height= {48}
           priority
         />
+        <div> 
+          <button className="border-2 border-solid border-white rounded-sm bg-[#F6A74E] font-bold text-lg text-[#000000] w-2xs h-14 cursor-pointer hover:bg-[#F8bc78] m-2">
+            Sök Jobb
+          </button>
+          <button className="border-2 border-solid border-white rounded-sm bg-[#F6A74E] font-bold text-lg text-[#000000] w-2xs h-14 cursor-pointer hover:bg-[#F8bc78] m-2">
+            Hitta Personal
+          </button>
+        </div>
         <div className="flex items-center">
           <p className="text-white w-2xl font-bold text-1xl p-1">
             Vi är passionerade,Kreativa och vi gillar det vi gör.
@@ -30,7 +37,7 @@ export default function landingPage() {
         </div>
         <div className="flex flex-col w-full">
           <div className="flex flex-row justify-center align-center bg-white p-3 my-5">
-            <div style={{display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", backgroundImage: 'url("/Electrician.jpg")', backgroundSize: 'cover', width: "auto", height: "auto" ,minHeight: "700px", minWidth: "700px"}}>
+            <div style={{display: "flex", margin: "10px" , justifyContent: "center", alignItems: "center", borderRadius: "50%", backgroundImage: 'url("/Electrician.jpg")', backgroundSize: 'cover', width: "auto", height: "auto" ,minHeight: "700px", minWidth: "700px"}}>
               <Bubble title="EL" color="orange" animation="/EL.json"></Bubble>
             </div>
             <div style={{display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", backgroundImage: 'url("/construction.jpg")', backgroundSize: 'cover', width: "auto", height: "auto", minHeight: "700px", minWidth: "700px"}}>
@@ -38,7 +45,7 @@ export default function landingPage() {
             </div>
           </div>
           <div className="flex flex-row justify-center align-center p-3 m-y-5">
-            <div style={{display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", backgroundImage: 'url("/malning.jpg")', backgroundSize: 'cover', width: "auto", height: "auto" ,minHeight: "700px", minWidth: "700px"}}>
+            <div style={{display: "flex", margin: "10px", justifyContent: "center", alignItems: "center", borderRadius: "50%", backgroundImage: 'url("/malning.jpg")', backgroundSize: 'cover', width: "auto", height: "auto" ,minHeight: "700px", minWidth: "700px"}}>
               <Bubble title="Målning" color="orange" animation="/paint.json"></Bubble>
             </div>
             <div style={{display: "flex", justifyContent: "center", alignItems: "center", borderRadius: "50%", backgroundImage: 'url("/service.jpg")', backgroundSize: 'cover', width: "auto", height: "auto" ,minHeight: "700px", minWidth: "700px"}}>
