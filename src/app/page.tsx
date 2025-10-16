@@ -1,6 +1,7 @@
 import Image from "next/image";
 import LottieAnimation from '../components/LottieAnimation';
 import Bubble from "@/components/bubble";
+import MainButton from "@/components/buttons";
 
 export default function landingPage() {
   return (
@@ -14,13 +15,9 @@ export default function landingPage() {
           height= {48}
           priority
         />
-        <div> 
-          <button className="border-2 border-solid border-white rounded-sm bg-[#F6A74E] font-bold text-lg text-[#000000] w-2xs h-14 cursor-pointer hover:bg-[#F8bc78] m-2">
-            Sök Jobb
-          </button>
-          <button className="border-2 border-solid border-white rounded-sm bg-[#F6A74E] font-bold text-lg text-[#000000] w-2xs h-14 cursor-pointer hover:bg-[#F8bc78] m-2">
-            Hitta Personal
-          </button>
+        <div>
+          <MainButton link="/jobs" label="Söka Jobb"></MainButton>
+          <MainButton link="/contacts" label="Hitta Personal"></MainButton>
         </div>
         <div className="flex items-center">
           <p className="text-white w-2xl font-bold text-1xl p-1">
