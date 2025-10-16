@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 export default function JobsPage() {
   return (
@@ -8,41 +7,56 @@ export default function JobsPage() {
             <label className="text-bold text-[#F6A74E] text-[40px] mb-6">Ansökan</label>
             <div className="flex">
               <div className="flex flex-col">
-                <label className="pl-2 pu-2">FÖRNAMN*</label>
+                <label className="pl-2 py-2">FÖRNAMN*</label>
                 <input placeholder="Förnamn" type="text" className="bg-white text-black m-2 w-xs h-10 p-2"/>
               </div>
               <div className="flex flex-col">
-                <label className="pl-2 pu-2">EFTERNAMN*</label>
+                <label className="pl-2 py-2">EFTERNAMN*</label>
                 <input placeholder="Förnamn" type="text" className="bg-white text-black m-2 w-xs h-10 p-2"/>
               </div>
             </div>
             <div className="flex">
               <div className="flex flex-col">
-                <label className="pl-2 pu-2">E-POSTADRESS*</label>
+                <label className="pl-2 py-2">E-POSTADRESS*</label>
                 <input placeholder="Förnamn" type="text" className="bg-white text-black m-2 w-xs h-10 p-2"/>
               </div>
               <div className="flex flex-col">
-                <label className="pl-2 pu-2">TELEFONNUMMER*</label>
+                <label className="pl-2 py-2">TELEFONNUMMER*</label>
                 <input placeholder="Förnamn" type="text" className="bg-white text-black m-2 w-xs h-10 p-2"/>
               </div>
             </div>
             <div className="flex">
               <div className="flex flex-col">
-                <label className="pl-2 pu-2">ADRESS*</label>
+                <label className="pl-2 py-2">ADRESS*</label>
                 <input placeholder="Förnamn" type="text" className="bg-white text-black m-2 w-xs h-10 p-2"/>
               </div>
               <div className="flex flex-col">
-                <label className="pl-2 pu-2">STAD*</label>
+                <label className="pl-2 py-2">STAD*</label>
                 <input placeholder="Förnamn" type="text" className="bg-white text-black m-2 w-xs h-10 p-2"/>
               </div>
             </div>
             <div className="flex flex-col">
-              <label className="pl-2 pu-2">LÄNK TILL DIN LINKEDIN*</label>
-              <input placeholder="www.linkedin.com/" type="text" className="bg-white text-black m-2 w-[658px] h-10 p-2"/>
+              <label className="pl-2 py-2">LÄNK TILL DIN LINKEDIN*</label>
+              <input placeholder="www.linkedin.com/" type="text" className="bg-white text-black m-2 w-[658px] h-10"/>
             </div>
             <div className="flex flex-col">
-              <label className="pl-2 pu-2">EXAMPLE*</label>
+              <label className="pl-2 py-2">EXAMPLE*</label>
               <textarea className="bg-white w-[658px] h-20"></textarea>
+            </div>
+            <div className="flex flex-col w-full py-2 pl-2">
+              <label className="pl-2 py-2">EXAMPLE CHOICE*</label>
+              <div className="pl-2 py-2">
+                <input className="m-1" name="test" type="radio"></input>
+                <label>Example 1</label>
+              </div>
+              <div className="pl-2 py-2">
+                <input className="m-1" name="test" type="radio"></input>
+                <label>Example 2</label>
+              </div>
+              <div className="pl-2 py-2">
+                <input className="m-1" name="test" type="radio"></input>
+                <label>Example 3</label>
+              </div>
             </div>
           </form>  
         </main>
