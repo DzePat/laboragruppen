@@ -1,4 +1,3 @@
-import { LottiePlayer } from 'lottie-web';
 import LottieAnimation from '../components/LottieAnimation';
 
 interface props{

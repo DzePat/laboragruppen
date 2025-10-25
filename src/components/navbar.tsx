@@ -33,7 +33,7 @@ const navItems = [
     },
 ];
 
-const Navbar: React.FunctionComponent<INavbarProps> = (props) => {
+const Navbar: React.FunctionComponent<INavbarProps> = () => {
     const pathname = usePathname();
     const isActive = (path: Url) => pathname === path;
 

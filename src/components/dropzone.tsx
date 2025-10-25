@@ -1,6 +1,5 @@
 'use client';
 
-import React, {useState} from 'react'
 import {useDropzone} from 'react-dropzone'
 
 interface MyDropzoneProps {
@@ -27,7 +26,7 @@ function MyDropzone({ files, setFiles }: MyDropzoneProps) {
       {
         isDragActive ?
           <p className='bg-white text-black cursor-pointer w-full text-center'>Drop the file here</p> :
-          <p className='p-2 bg-white text-black cursor-pointer w-full text-center'>Drag 'n' drop some files here, or click to select files</p>
+          <p className='p-2 bg-white text-black cursor-pointer w-full text-center'>Drag and drop some files here, or click to select files</p>
       }
       {files.length > 0 && (
         <ul>
