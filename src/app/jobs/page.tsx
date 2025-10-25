@@ -1,5 +1,10 @@
+'use client';
+
+import MyDropzone from "@/components/dropzone"
+import { useState } from "react";
 
 export default function JobsPage() {
+  const [files, setFiles] = useState<File[]>([]);
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] justify-items-center min-h-screen gap-16 ">
       <main className="flex flex-col row-start-2 items-center sm:items-start">
@@ -58,6 +63,10 @@ export default function JobsPage() {
                 <label>Example 3</label>
               </div>
             </div>
+            <MyDropzone files={files} setFiles={setFiles}></MyDropzone>
+            <button className="border-2 border-solid border-white rounded-xl bg-[#F6A74E] font-bold text-lg text-[#000000] w-2xs h-10 cursor-pointer hover:bg-[#F8bc78] m-2">
+              Skicka
+            </button>
           </form>  
         </main>
     </div>
