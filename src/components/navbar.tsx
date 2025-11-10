@@ -44,7 +44,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = () => {
                 className="absolute left-0"
             >
                 <Image
-                          src="/newLogo.png"
+                          src="/LogoTransparent.png"
                           alt="Next.js logo"
                           width={60}
                           height= {60}
@@ -57,7 +57,7 @@ const Navbar: React.FunctionComponent<INavbarProps> = () => {
                         <Link 
                             href={eachItem.href}
                             className={
-                                `${isActive(eachItem.href) ? "text-spotify-green" : ""} text-white hover:underline hover:underline-offset-4 hover:[color:#d6921c]`
+                                `${isActive(eachItem.href) ? "text-spotify-green" : ""} text-[#215C5B] hover:underline hover:underline-offset-4 hover:[color:#d6921c]`
                             }
                         >
                             {eachItem.label}

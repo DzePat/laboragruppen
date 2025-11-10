@@ -9,8 +9,8 @@ export default function landingPage() {
       <main className="flex flex-col justify-center items-center">
         <Image
           className="bg-transparent"
-          src="/newLogo.png"
-          alt="Next.js logo"
+          src="/LogoTransparent.png"
+          alt="Logo for Labora Gruppen AB"
           width={360}
           height= {48}
           priority
@@ -20,7 +20,7 @@ export default function landingPage() {
           <MainButton link="/contacts" label="Hitta Personal"></MainButton>
         </div>
         <div className="flex items-center">
-          <p className="text-white w-2xl font-bold text-1xl p-1">
+          <p className="text-[#215C5B] w-2xl font-bold text-1xl p-1">
             Vi är passionerade,Kreativa och vi gillar det vi gör.
             Labora Gruppens Kompenetsområden är många med erfaren och auktoriserad personal inom el, måleri och bygg. 
             Vi genomför stora som små servicearbeten till att erbjuda helentrepenad.
